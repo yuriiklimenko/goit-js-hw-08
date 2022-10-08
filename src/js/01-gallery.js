@@ -1,10 +1,9 @@
 // Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+
 const gallery = document.querySelector('.gallery');
 
 function createMarkup(galleryItems) {
@@ -18,7 +17,7 @@ function createMarkup(galleryItems) {
     })
     .join('');
 }
-// При створенні розмітки в завданні 2 тег посилання слід обгортати в тег лі.
+
 const markup = createMarkup(galleryItems);
 gallery.innerHTML = markup;
 
