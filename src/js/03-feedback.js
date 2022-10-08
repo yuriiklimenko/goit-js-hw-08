@@ -1,4 +1,4 @@
-var throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 
 const LOCALSTORAGE_KEY = 'feedback-form-state';
 const formEl = document.querySelector('.feedback-form');
