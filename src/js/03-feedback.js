@@ -12,7 +12,7 @@ if (load(LOCALSTORAGE_KEY)) {
 
 writeInField(formData);
 
-formEl.addEventListener('input', throttle(onInput, 2000));
+formEl.addEventListener('input', throttle(onInput, 500));
 formEl.addEventListener('submit', onSubmit);
 
 function onInput(e) {
